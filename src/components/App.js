@@ -1,11 +1,8 @@
 import '../styles/App.scss';
+import WeatherApp from './WeatherApp';
 
 function App() {
-  return (
-    <div>
-      <h1>Hola mundo</h1>
-    </div>
-  );
+  return <WeatherApp/>
 }
 
 export default App;
