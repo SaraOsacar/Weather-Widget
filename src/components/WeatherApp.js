@@ -3,6 +3,8 @@ import WeatherForm from './WeatherForm';
 import WeatherMainInfo from './WeatherMainInfo';
 import styles from './WeatherApp.module.css';
 import Header from './Header';
+import Loading from './Loading';
+
 
 
 
@@ -26,6 +28,10 @@ export default function WeatherApp() {
       );
       const json = await request.json();
       console.log(json);
+
+      setTimeout(() => {
+
+      }, 2000);
       setWeather(json);
     } catch (error) {
      
@@ -41,7 +47,7 @@ export default function WeatherApp() {
     <div className={styles.weatherContainer}>
       <Header />
       <WeatherForm onChangeCity={handleChangeCity} />
-      <WeatherMainInfo weather={weather} />
+      {weather ? <WeatherMainInfo weather={weather} /> : <Loading />}
       <footer style={{ paddingBottom: '20px'}}>
         <p className="footerText">© 2023 Weather Widget App. All rights reserved.</p>
       </footer>
