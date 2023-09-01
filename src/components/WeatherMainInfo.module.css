@@ -1,9 +1,11 @@
 .mainInfo {
-  background-color: white;
+  background-color:rgb(243, 221, 194);
   padding: 40px;
   border-radius: 5px;
   box-sizing: border-box;
   border: 2px solid blue;
+  margin-bottom: 20px;
+  
 }
 
 .city {

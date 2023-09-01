@@ -38,10 +38,13 @@ export default function WeatherApp() {
   }
 
   return (
-    <div className={styles.weatherContainer} >
-        <Header/>
+    <div className={styles.weatherContainer}>
+      <Header />
       <WeatherForm onChangeCity={handleChangeCity} />
-      <WeatherMainInfo weather={weather}/>
+      <WeatherMainInfo weather={weather} />
+      <footer style={{ paddingBottom: '20px'}}>
+        <p className="footerText">© 2023 Weather Widget App. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
