@@ -7,7 +7,7 @@
   padding: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  border: 0;
+  border: 2px solid blue;
   border-radius: 3px;
 }
 
