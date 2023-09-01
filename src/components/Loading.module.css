@@ -3,6 +3,7 @@
     height: 634px;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-sizing: border-box;
     background-color: white;
     border-radius: 5px;
