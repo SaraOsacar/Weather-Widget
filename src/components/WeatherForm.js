@@ -17,7 +17,7 @@ function onChange(e){
  }
 
 return <form onSubmit={handleSubmit} className={styles.container} >
-    <input type="text" onChange={onChange} className={styles.input}/>
+    <input type="text" onChange={onChange} className={styles.input} placeholder="Write the city you're looking for"/>
 </form>
 
 
