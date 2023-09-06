@@ -1,6 +1,7 @@
 import '../styles/App.scss';
 import WeatherApp from './WeatherApp';
 
+
 function App() {
   return <WeatherApp/>
 }

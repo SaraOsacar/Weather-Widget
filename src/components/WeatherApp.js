@@ -48,7 +48,7 @@ export default function WeatherApp() {
       <Header />
       <WeatherForm onChangeCity={handleChangeCity} />
       {weather ? <WeatherMainInfo weather={weather} /> : <Loading />}
-      <footer style={{ paddingBottom: '20px'}}>
+      <footer style= {{paddingBottom: '20px'}} className="footer">
         <p className="footerText">© 2023 Weather Widget App. All rights reserved.</p>
       </footer>
     </div>

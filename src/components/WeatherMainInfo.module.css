@@ -1,11 +1,10 @@
 .mainInfo {
-  background-color:rgb(243, 221, 194);
+  background-color: rgb(243, 221, 194);
   padding: 40px;
   border-radius: 5px;
   box-sizing: border-box;
   border: 2px solid blue;
   margin-bottom: 20px;
-  
 }
 
 .city {
@@ -30,4 +29,20 @@
 .current {
   font-size: 38px;
   font-weight: bold;
+}
+@media (max-width: 468px) {
+  .mainInfo {
+    padding: 40px;
+    margin-left: 10px;
+    margin-right: 15px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .city {
+    font-size: 24px;
+  }
+  .country {
+    font-size: 16px;
+  }
 }
